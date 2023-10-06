@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOLICITUD DE QUIPOS TIC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="p-5 bg-light text-white text-center">
+    <img src="data:image/png;base64,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" width="500">
+</div>
+<div class="p-5 bg-primary text-white text-center">
+    <h1>UNIDAD DE TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN
+        FORMATO DE REVISIÓN DE EQUIPOS DE CÓMPUTO</h1>
+</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+    <div class="container-fluid">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a style="color: red; text-align: center" class="nav-link" href="/solicitudes">REGRESAR</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container mt-3">
+    <form th:action="@{/solicitud/form}" method="post" th:object="${solicitudes}">
+        <div class="mb-3 mt-3">
+            <label >NÚMERO DE CÓDIGO:</label>
+            <input type="number" class="form-control"  placeholder="" th:field="*{numeroCodigo}" readonly="readonly">
+        </div>
+        <div class="mb-3">
+            <label >CÓDIGO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{codigo}">
+        </div>
+        <div class="mb-3">
+            <label >NOMBRE DEL FUNCIONARIO:</label>
+            <select class="form-control" th:field="*{persona}">
+                <option th:each="persona : ${personas}" th:value="${persona.id}" th:text="${persona.nomPersona}"></option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label >DIRECCION/UNIDAD:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{direccion}">
+        </div>
+
+        <div class="mb-3">
+            <label >E-MAIL:</label>
+            <input type="email" class="form-control" placeholder="" th:field="*{email}">
+        </div>
+
+        <div class="mb-3">
+            <label >TIPO DE REGISTRO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{tipoRegistro}">
+        </div>
+
+        <div class="mb-3">
+            <label >FECHA:</label>
+            <input type="date" class="form-control" placeholder="" th:field="*{fecha}">
+        </div>
+
+        <div class="mb-3">
+            <label >TIPO DE EQUIPO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{tipoEquipo}">
+        </div>
+
+        <div class="mb-3">
+            <label >SISTEMA OPERATIVO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{sistemaOperativo}">
+        </div>
+
+        <div class="mb-3">
+            <label >PROCESADOR:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{procesador}">
+        </div>
+
+        <div class="mb-3">
+            <label >TIPO DE DISCO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{tipoDisco}">
+        </div>
+
+        <div class="mb-3">
+            <label >RAM:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{ram}">
+        </div>
+
+        <div class="mb-3">
+            <label >CAPACIDAD DE DISCO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{capacidadDisco}">
+        </div>
+
+        <div class="mb-3">
+            <label >MARCA DE DISCO DURO/SSD:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaDiscoDuro}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO DISCO DURO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloDiscoDuro}">
+        </div>
+        <div class="mb-3">
+            <label >SERIE DISCO DURO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieDiscoDuro}">
+        </div>
+        <div class="mb-3">
+            <label >ESTADO DISCO DURO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoDiscoDuro}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION DISCO DURO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionDiscoDuro}">
+        </div>
+        <div class="mb-3">
+            <label >MARCA CASE:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaCase}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO CASE:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloCase}">
+        </div>
+        <div class="mb-3">
+            <label >SERIE CASE:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieCase}">
+        </div>
+        <div class="mb-3">
+            <label >ESTADO CASE:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoCase}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION CASE:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionCase}">
+        </div>
+        <div class="mb-3">
+            <label >MARCA MONITOR:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaMonitor}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO MONITOR:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloMonitor}">
+        </div>
+        <div class="mb-3">
+            <label >SERIE MONITOR:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieMonitor}">
+        </div>
+        <div class="mb-3">
+            <label >ESTADO MONITOR:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoMonitor}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION MONITOR:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionMonitor}">
+        </div>
+        <div class="mb-3">
+            <label >MARCA TECLADO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaTeclado}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO TECLADO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloTeclado}">
+        </div>
+        <div class="mb-3">
+            <label >SERIE TECLADO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieTeclado}">
+        </div>
+        <div class="mb-3">
+            <label >ESTADO TECLADO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoTeclado}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION TECLADO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionTeclado}">
+        </div>
+        <div class="mb-3">
+            <label >MARCA MOUSE:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaMouse}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO MOUSE:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloMouse}">
+        </div>
+
+        <div class="mb-3">
+            <label >SERIE MOUSE:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieMouse}">
+        </div>
+
+        <div class="mb-3">
+            <label >ESTADO MOUSE:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoMouse}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION MOUSE:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionMouse}">
+        </div>
+        <div class="mb-3">
+            <label >MARCA UPS:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaUPS}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO UPS:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloUPS}">
+        </div>
+        <div class="mb-3">
+            <label >SERIE UPS:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieUPS}">
+        </div>
+        <div class="mb-3">
+            <label >ESTADO UPS:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoUPS}">
+        </div>
+        <div class="mb-3">
+            <label >OBSEVACION UPS:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionUPS}">
+        </div>
+        <div class="mb-3">
+            <label >MARCA PARLANTES:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaParlantes}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO PARLANTES:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloParlantes}">
+        </div>
+        <div class="mb-3">
+            <label >SERIE PARLANTES:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieParlantes}">
+        </div>
+        <div class="mb-3">
+            <label >ESTADO PARLANTES:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoParlantes}">
+        </div>
+        <div class="mb-3">
+            <label >MARCA MEMORIA RAM:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaMemoriaRam}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO MEMORIA RAM:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloMemoriaRam}">
+        </div>
+        <div class="mb-3">
+            <label >SERIE MEMORIA RAM:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieMemoriaRam}">
+        </div>
+        <div class="mb-3">
+            <label >ESTADO MEMORIA RAM:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoMemoriaRam}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION MEMORIA RAM:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionMemoriaRam}">
+        </div>
+
+        <div class="mb-3">
+            <label >MARCA CAMARA:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaCamara}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO CAMARA:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloCamara}">
+        </div>
+        <div class="mb-3">
+            <label >SERIE CAMARA:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieCamara}">
+        </div>
+        <div class="mb-3">
+            <label >ESTADO CAMARA:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoCamara}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION CAMARA:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionCamara}">
+        </div>
+        <div class="mb-3">
+            <label >MARCA BATERIA :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaBateria}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO BATERIA:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloBateria}">
+        </div>
+        <div class="mb-3">
+            <label >SERIE BATERIA:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieBateria}">
+        </div>
+        <div class="mb-3">
+            <label >ESTADO BATERIA:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoBateria}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION BATERIA:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionBateria}">
+        </div>
+        <div class="mb-3">
+            <label >MARCA CARGADOR PORTATIL:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaCargadorPortatil}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO CARGADOR PORTATIL:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloCargadorPortatil}">
+        </div>
+        <div class="mb-3">
+            <label >SERIE CARGADOR PORTATIL:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieCargadorPortatil}">
+        </div>
+        <div class="mb-3">
+            <label >ESTADO CARGADOR PORTATIL:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoCargadorPortatil}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION CARGADOR PORTATIL :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionCargadorPortatil}">
+        </div>
+        <div class="mb-3">
+            <label >MARCA MICROFONO :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaMicrofono}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO MICROFONO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloMicrofono}">
+        </div>
+        <div class="mb-3">
+            <label >SERIE MICROFONO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieMicrofono}">
+        </div>
+        <div class="mb-3">
+            <label >ESTADO MICROFONO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoMicrofono}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION MICROFONO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionMicrofono}">
+        </div>
+        <div class="mb-3">
+            <label >MARCA TARJETA RED:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{marcaTarjetaRed}">
+        </div>
+        <div class="mb-3">
+            <label >MODELO TARJETA RED:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{modeloTarjetaRed}">
+        </div>
+        <div class="mb-3">
+            <label >SERIE TARJETA RED:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{serieTarjetaRed}">
+        </div>
+        <div class="mb-3">
+            <label >ESTADO TARJETA RED:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{estadoTarjetaRed}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION TARJETA RED:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionTarjetaRed}">
+        </div>
+        <div class="mb-3">
+            <label >FUNCIONA CABLE DE ENEGIA :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{funcionaCableEnergia}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION CABLE DE ENERGIA :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionCableEnergia}">
+        </div>
+        <div class="mb-3">
+            <label >FUNCIONA TOUCHPAD :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{funcionaTouchpad}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION TOUCHPAD :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionTouchpad}">
+        </div>
+        <div class="mb-3">
+            <label >FUNCIONA LECTOR :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{funcionaLector}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION DE LECTOR:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionLector}">
+        </div>
+        <div class="mb-3">
+            <label >FUNCIONA LECTOR DE TARJETAS :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{funcionaLectorTarjetas}">
+        </div>
+        <div class="mb-3">
+            <label >FUNCIONA PUERTO ETHERNET:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{funcionaPuertoEthernet}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION PUERTO ETHERNET :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionPuertoEthernet}">
+        </div>
+        <div class="mb-3">
+            <label >FUNCIONA PUERTO HDMI :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{funcionaPuertoHDMI}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION PUERTO HDMI:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionPuertoHDMI}">
+        </div>
+        <div class="mb-3">
+            <label >FUNCIONA PUERTO VGA :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{funcionaPuertoVGA}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION PUERTO VGA :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionPuertoVGA}">
+        </div>
+        <div class="mb-3">
+            <label >FUNCIONA INDICADORES LUMINOSOS :</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{funcionaIndicadoresLuminosos}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION INDICADORES LUMINOSOS:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionIndicadoresLuminosos}">
+        </div>
+        <div class="mb-3">
+            <label >FUNCIONA SALIDA DE AUDIO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{funcionaSalidaAudio}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION SALIDA DE AUDIO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionSalidaAudio}">
+        </div>
+        <div class="mb-3">
+            <label >FUNCIONA WIFI:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{funcionaWIFI}">
+        </div>
+        <div class="mb-3">
+            <label >OBSERVACION WIFI:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{observacionWIFI}">
+        </div>
+        <div class="mb-3">
+            <label >MANTENIMIENTO REALIZADO/ REALIZAR:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{mantenimiento}">
+        </div>
+        <div class="mb-3">
+            <label >REVISADO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{revisado}">
+        </div>
+        <div class="mb-3">
+            <label >CARGO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{cargoRevisado}">
+        </div>
+        <div class="mb-3">
+            <label >RECIBIDO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{recibido}">
+        </div>
+        <div class="mb-3">
+            <label >CARGO:</label>
+            <input type="text" class="form-control" placeholder="" th:field="*{cargoRecibido}">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+</html>

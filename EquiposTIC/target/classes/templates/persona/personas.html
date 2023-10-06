@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LISTADO DE PERSONAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+    <div class="container-fluid">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a style="color: cyan" class="nav-link" href="/personas">PERSONAS</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: yellow" class="nav-link" href="/persona/form">REGISTRAR UNA PERSONA</a>
+            </li>
+            <li class="nav-item">
+                <a style="color: red" class="nav-link" href="/">REGRESAR AL INICIO</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<div class="container mt-3">
+    <h2>LISTADO DE PERSONAS</h2>
+    <a href="/persona/form" class="btn btn-primary">NUEVO</a>
+    <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="">
+        <button class="btn btn-primary" type="button">BUSCAR</button>
+    </form>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="persona : ${personas}">
+            <td th:text="${persona.id}"></td>
+            <td th:text="${persona.nomPersona}"></td>
+            <td th:text="${persona.email}"></td>
+            <td>
+                <a th:href="@{/persona/editar/} + ${persona.id}" class="btn btn-success">Editar</a>
+                <a th:href="@{/persona/eliminar/} + ${persona.id}" class="btn btn-danger">Eliminar</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container mt-3">
+    <h2></h2>
+    <p></p>
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</div>
+</body>
+</html>
